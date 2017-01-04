@@ -1,0 +1,105 @@
+:source-highlighter: coderay
+:icons: font
+
+= Curriculum
+
+== Intro
+This a demo of some feature that we could benefit from.
+
+See the source code listings below with callouts, that's the most interesting.
+
+What is needed to render this in HTML?
+
+* Ruby
+* AsciiDoctor Gem
+* CodeRay Gem (for highlighting)
+
+That's it. In Ubuntu install `sudo gem install asciidoctor coderay`.
+Then create a `SAMPLE.adoc` file.
+Then do this: `asciidoctor SAMPLE.adoc`.
+
+NOTE: See the first two line in this file.
+In the source of it if you're seeing HTML.
+Those two lines are needed for syntax highlight and callout icons.
+
+== Python to Java
+
+=== JDK Installation
+
+Do this.
+Do that.
+It works if you execute `java` and something happens other than an error being thrown you're on the right track mate!
+
+=== Hello World!
+
+For starters see these two programs.
+One in Python.
+The other in Java.
+
+The two are the same semantically!
+
+TIP: Pro tip ... write these into an editor don't copy paste them!
+
+[source,python]
+----
+fizzbuzz = ''
+
+start = int(input("Start Value:"))
+end = int(input("End Value:"))
+
+for i in range(start,end+1):
+    if i%3 == 0:
+        fizzbuzz += "fizz"
+    if i%5 == 0:
+        fizzbuzz += "buzz"
+    if i%3 != 0 and i%5 != 0:
+        fizzbuzz += str(i)
+
+    fizzbuzz += ' '
+
+print(fizzbuzz)
+----
+
+And here's the Java stuff.
+
+[source,java]
+----
+public class FizzBuzz {
+  public static void main(String[] args) {
+    for(int i = 1; i <= 100; i++) {
+      if (((i % 5) == 0) && ((i % 7) == 0))
+        System.out.print("fizzbuzz");
+      else if ((i % 7) == 0) System.out.print("buzz");
+      else System.out.print(i);
+      System.out.print(" ");
+    }
+    System.out.println();
+  }
+}
+----
+
+Try them both.
+
+=== Let me show you the differences!
+
+Okay, let's look at it a little closer!
+
+[source,java]
+----
+public class FizzBuzz {
+  public static void main(String[] args) { // <1>
+    for(int i = 1; i <= 100; i++) { // <2>
+      if (((i % 5) == 0) && ((i % 7) == 0))
+        System.out.print("fizzbuzz"); // <3>
+      else if ((i % 7) == 0) System.out.print("buzz");
+      else System.out.print(i);
+      System.out.print(" ");
+    }
+    System.out.println();
+  }
+}
+----
+<1> Okay, so do you remember `def main()` from Python?
+Same stuff, different cover.
+<2> This is like Python's `for` loop combined with `range`.
+<3> Remember `print()`? Well there you go then. Same stuff!
