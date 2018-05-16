@@ -103,3 +103,7 @@ public class FizzBuzz {
 Same stuff, different cover.
 <2> This is like Python's `for` loop combined with `range`.
 <3> Remember `print()`? Well there you go then. Same stuff!
+
+=== Video Wrap Up!
+
+video::TMuno5RZNeE[youtube]
